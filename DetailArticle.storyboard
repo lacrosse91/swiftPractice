@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="96e-nU-LB0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Article View Controller-->
+        <scene sceneID="1pp-1b-0JJ">
+            <objects>
+                <viewController storyboardIdentifier="DetailArticle" useStoryboardIdentifierAsRestorationIdentifier="YES" id="96e-nU-LB0" customClass="DetailArticleViewController" customModule="studySample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tjr-sx-MhH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dzy-gn-bXZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TzW-Bb-ZDe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pBY-Jf-frg">
+                                <rect key="frame" x="39" y="74" width="296" height="191"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="296" id="eAk-56-bKY"/>
+                                    <constraint firstAttribute="height" constant="191" id="tn8-Or-aGm"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pBY-Jf-frg" firstAttribute="top" secondItem="tjr-sx-MhH" secondAttribute="bottom" constant="54" id="BjM-cz-Hle"/>
+                            <constraint firstItem="pBY-Jf-frg" firstAttribute="leading" secondItem="TzW-Bb-ZDe" secondAttribute="leadingMargin" constant="23" id="Y35-It-zk4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pBY-Jf-frg" secondAttribute="trailing" constant="24" id="fTT-ge-4op"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailText" destination="pBY-Jf-frg" id="mOP-ZD-2Re"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIn-25-5Wh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="-103.89805097451276"/>
+        </scene>
+    </scenes>
+</document>

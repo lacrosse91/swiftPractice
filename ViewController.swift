@@ -65,6 +65,12 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("section: \(indexPath.section) index: \(indexPath.row)")
+        let storyboard = UIStoryboard(name: "DetailArticle", bundle: nil)
+        if let next: DetailArticleViewController = storyboard.instantiateViewController(withIdentifier: "DetailArticle") as? DetailArticleViewController {
+            next.article = articles[indexPath.row]
+            navigationController?.pushViewController(next, animated: true)
+        }
+
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
