@@ -51,8 +51,6 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
         let article = articles[indexPath.row]
-//        let title = article["title"] as? String ?? "" // nil合体演算子を使用
-//        let title = article.title
         cell.bindData(article: article)
         return cell
     }
